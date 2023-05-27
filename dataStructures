@@ -3,17 +3,28 @@ Array: A collection of elements of the same type stored in contiguous memory loc
 
       Key Points about Arrays:
 
-      Indexing: Elements in an array are accessed using an index value. The index starts at 0 for the first element and goes up to (array length - 1) for the last element.
-      Fixed Size: Arrays have a fixed size, which means they can hold a predetermined number of elements. Once the array is created, its size cannot be changed. To accommodate more elements, a new array with a larger size must be created.
-      Homogeneous Elements: Arrays store elements of the same type. For example, an array of integers will only hold integer values, and an array of strings will only hold string values.w
-      Contiguous Memory: Array elements are stored in contiguous memory locations. This property allows for efficient access to elements using index-based calculations.
-      Random Access: Arrays provide constant-time random access to elements. It means that given an index, you can directly access the corresponding element without traversing the entire array.
-      Efficiency: Arrays offer efficient element access and retrieval as long as the index is known. However, inserting or deleting elements in the middle of an array requires shifting subsequent elements, resulting in a time-consuming operation.
-      Length: Arrays have a length property that indicates the number of elements it can hold. The length is typically defined when the array is created and cannot be changed.
-      Initialization: Arrays can be initialized with values during declaration or populated with values later using assignment statements.
-      Iteration: Arrays can be traversed or iterated using loops, such as for loops or while loops, to perform operations on each element.
-      Multidimensional Arrays: Arrays can have multiple dimensions, forming matrices or tables. For example, a two-dimensional array can represent a grid or a spreadsheet.
-      Popular Operations: Common operations on arrays include accessing elements by index, updating elements, searching for an element, sorting elements, and calculating aggregate values like the sum or average.
+      Indexing:
+        - Elements in an array are accessed using an index value. The index starts at 0 for the first element and goes up to (array length - 1) for the last element.
+      Fixed Size: 
+        - Arrays have a fixed size, which means they can hold a predetermined number of elements. Once the array is created, its size cannot be changed. To accommodate more elements, a new array with a larger size must be created.
+      Homogeneous Elements: 
+        - Arrays store elements of the same type. For example, an array of integers will only hold integer values, and an array of strings will only hold string values.w
+      Contiguous Memory: 
+        - Array elements are stored in contiguous memory locations. This property allows for efficient access to elements using index-based calculations.
+      Random Access: 
+        - Arrays provide constant-time random access to elements. It means that given an index, you can directly access the corresponding element without traversing the entire array.
+      Efficiency: 
+        - Arrays offer efficient element access and retrieval as long as the index is known. However, inserting or deleting elements in the middle of an array requires shifting subsequent elements, resulting in a time-consuming operation.
+      Length: 
+        - Arrays have a length property that indicates the number of elements it can hold. The length is typically defined when the array is created and cannot be changed.
+      Initialization: 
+        - Arrays can be initialized with values during declaration or populated with values later using assignment statements.
+      Iteration: 
+        - Arrays can be traversed or iterated using loops, such as for loops or while loops, to perform operations on each element.
+      Multidimensional Arrays: 
+        - Arrays can have multiple dimensions, forming matrices or tables. For example, a two-dimensional array can represent a grid or a spreadsheet.
+      Popular Operations: 
+        - Common operations on arrays include accessing elements by index, updating elements, searching for an element, sorting elements, and calculating aggregate values like the sum or average.
 
 Linked List: A sequence of nodes where each node contains data and a reference to the next node in the sequence.
   - A linked list is a data structure that consists of a sequence of nodes, where each node contains both data and a reference (or link) to the next node in the sequence. It provides an alternative way to store and organize data compared to arrays.
@@ -37,74 +48,109 @@ Linked List: A sequence of nodes where each node contains data and a reference t
 
 Stack: A Last-In-First-Out (LIFO) data structure where elements are inserted and removed from the same end, called the top of the stack.
   - A stack is an abstract data type that follows the Last-In-First-Out (LIFO) principle. It models a collection of elements where the last element added is the first one to be removed. Think of it as a stack of plates, where you can only add or remove plates from the top.
+      Example: Implementing a browser's back button functionality & Managing function calls and local variables in a programming language.
 
-      Key Points about Stacks:
 
-      Operations: Stacks support two main operations:
-      Push: Adds an element to the top of the stack.
-      Pop: Removes the top element from the stack.
-      Top: The top refers to the element at the top of the stack, which is the most recently added element.
-      Empty Stack: A stack can be empty if it doesn't contain any elements. Trying to pop from an empty stack results in an underflow condition.
-      Stack Size: The size of a stack represents the number of elements it currently contains.
-      Stack Implementation: Stacks can be implemented using various data structures, with two common approaches:
+Operations:
+            Push: Adds an element to the top of the stack.
+            Pop: Removes the top element from the stack.
+            Top: The top refers to the element at the top of the stack, which is the most recently added element.
+            Empty Stack: A stack can be empty if it doesn't contain any elements. Trying to pop from an empty stack results in an underflow condition.
+            Stack Size: The size of a stack represents the number of elements it currently contains.
+            Stack Implementation: Stacks can be implemented using various data structures, with two common approaches:
 
-      Array-based implementation: Uses an array to store the elements. The top index keeps track of the last inserted element.
-      Linked list-based implementation: Uses a linked list, where each node contains the element and a reference to the next node. The top is represented by the head of the linked list.
-      Usage of Stacks: Stacks are used in various scenarios, including but not limited to:
+Implementation:
+            Array-based: Uses an array to store the elements. The top index keeps track of the last inserted element.
+            Linked list-based: Uses a linked list, where each node contains the element and a reference to the next node. The top is represented by the head of the linked list.
+     
+Usage of Stacks:
+            Function call stack: Tracks function calls and their respective local variables.
+            Expression evaluation: Evaluating expressions involving parentheses, operators, and operands.
+            Undo/Redo operations: Storing the history of actions to enable undo or redo functionality.
+            Backtracking algorithms: Keeping track of states to backtrack and explore different paths.
+            Parsing and syntax analysis: Parsing and processing tokens in a language's syntax.
+            Time Complexity: The push and pop operations in a stack typically have a time complexity of O(1) or constant time since they involve only updating the top of the stack.
 
-      Function call stack: Tracks function calls and their respective local variables.
-      Expression evaluation: Evaluating expressions involving parentheses, operators, and operands.
-      Undo/Redo operations: Storing the history of actions to enable undo or redo functionality.
-      Backtracking algorithms: Keeping track of states to backtrack and explore different paths.
-      Parsing and syntax analysis: Parsing and processing tokens in a language's syntax.
-      Time Complexity: The push and pop operations in a stack typically have a time complexity of O(1) or constant time since they involve only updating the top of the stack.
-
-      Auxiliary Operations: Additional operations on stacks may include:
-      Peek/Top: Retrieves the top element without removing it.
-      Size: Returns the current size of the stack.
-      IsEmpty: Checks if the stack is empty.
-      Clear: Removes all elements from the stack.
+Auxiliary Operations:
+            Peek/Top: Retrieves the top element without removing it.
+            Size: Returns the current size of the stack.
+            IsEmpty: Checks if the stack is empty.
+            Clear: Removes all elements from the stack.
 
 Queue: A First-In-First-Out (FIFO) data structure where elements are inserted at the rear and removed from the front.
   - A queue is an abstract data type that follows the First-In-First-Out (FIFO) principle. It models a collection of elements where the first element added is the first one to be removed. Think of it as a line of people waiting, where the person who arrives first gets served first.
 
-      Key Points about Queues:
+ Operations:
+            Enqueue (or Push): Adds an element to the back (rear) of the queue.
+            Dequeue (or Pop): Removes the element from the front (front) of the queue.
+            Front and Rear: The front refers to the element at the front of the queue, which is the oldest element waiting to be removed. The rear represents the element at the back of the queue, which is the most recently added element.
+            Empty Queue: A queue can be empty if it doesn't contain any elements. Trying to dequeue from an empty queue results in an underflow condition.
+            Queue Size: The size of a queue represents the number of elements it currently contains.
+            
+Queue Implementation: 
+            Array-based implementation: Uses an array to store the elements. Two pointers, front and rear, keep track of the elements' positions.
+            Linked list-based implementation: Uses a linked list, where each node contains the element and a reference to the next node. The front and rear are represented by the head and tail of the linked list.
+      
+Usage of Queues: 
+            Process scheduling: Managing the order of execution for processes in an operating system.
+            Task processing: Handling requests or tasks in a sequential manner.
+            Breadth-First Search (BFS): Traversing and exploring nodes in a graph level by level.
+            Print spooling: Managing print requests in the order they are received.
+            Buffer management: Controlling access to a shared resource to avoid conflicts.
+              
+Time Complexity: 
+            The enqueue and dequeue operations in a queue typically have a time complexity of O(1) or constant time since they involve updating the front or rear of the queue.
+     
+Auxiliary Operations:
+           Peek/Front: Retrieves the front element without removing it.
+           Size: Returns the current size of the queue.
+           IsEmpty: Checks if the queue is empty.
+           Clear: Removes all elements from the queue.
+  
+Hash Table: 
+          A data structure that stores data in key-value pairs and provides fast retrieval based on the key.
+          Example: Storing user credentials in a database, with usernames as keys and encrypted passwords as values.
+      
+Tree:
+  A hierarchical data structure consisting of nodes, with one node as the root and other nodes organized into levels or layers.
+  Example: Hierarchical structure of file system on a computer & org. structure of a company, w/ CEO as the root and employees as nodes.
 
-      Operations: Queues support two main operations:
-      Enqueue (or Push): Adds an element to the back (rear) of the queue.
-      Dequeue (or Pop): Removes the element from the front (front) of the queue.
-      Front and Rear: The front refers to the element at the front of the queue, which is the oldest element waiting to be removed. The rear represents the element at the back of the queue, which is the most recently added element.
-      Empty Queue: A queue can be empty if it doesn't contain any elements. Trying to dequeue from an empty queue results in an underflow condition.
-      Queue Size: The size of a queue represents the number of elements it currently contains.
-      Queue Implementation: Queues can be implemented using various data structures, with two common approaches:
-      Array-based implementation: Uses an array to store the elements. Two pointers, front and rear, keep track of the elements' positions.
-      Linked list-based implementation: Uses a linked list, where each node contains the element and a reference to the next node. The front and rear are represented by the head and tail of the linked list.
-      Usage of Queues: Queues are used in various scenarios, including but not limited to:
-      Process scheduling: Managing the order of execution for processes in an operating system.
-      Task processing: Handling requests or tasks in a sequential manner.
-      Breadth-First Search (BFS): Traversing and exploring nodes in a graph level by level.
-      Print spooling: Managing print requests in the order they are received.
-      Buffer management: Controlling access to a shared resource to avoid conflicts.
-      Time Complexity: The enqueue and dequeue operations in a queue typically have a time complexity of O(1) or constant time since they involve updating the front or rear of the queue.
-      Auxiliary Operations: Additional operations on queues may include:
-      Peek/Front: Retrieves the front element without removing it.
-      Size: Returns the current size of the queue.
-      IsEmpty: Checks if the queue is empty.
-      Clear: Removes all elements from the queue.
+Binary Tree: 
+  A type of tree where each node has at most two child nodes, typically referred to as the left child and right child.
+    Example: Family trees, each node represents an individual and has at most two children representing parents.
 
-Hash Table: A data structure that stores data in key-value pairs and provides fast retrieval based on the key.
-Tree: A hierarchical data structure consisting of nodes, with one node as the root and other nodes organized into levels or layers.
-Binary Tree: A type of tree where each node has at most two child nodes, typically referred to as the left child and right child.
-Binary Search Tree: A binary tree where the left child of a node contains a value smaller than the node, and the right child contains a value greater than the node.
-Heap: A complete binary tree where every parent node has a value greater than or equal to (or less than or equal to) its child nodes.
-Graph: A collection of nodes (vertices) and edges that connect these nodes.
-Set: An unordered collection of unique elements with no duplicate values.
-Dictionary/Map: A data structure that stores key-value pairs, allowing efficient lookup and retrieval of values based on keys.
-Stack: A Last-In-First-Out (LIFO) data structure where elements are inserted and removed from the same end, called the top of the stack.
-Queue: A First-In-First-Out (FIFO) data structure where elements are inserted at the rear and removed from the front.
-Linked List: A sequence of nodes where each node contains data and a reference to the next node in the sequence.
-Doubly Linked List: A linked list where each node contains references to both the next and previous nodes.
-Trie: A tree-like data structure used to store a dynamic set of strings efficiently.
-Priority Queue: A queue where elements have associated priorities, and elements with higher priority are dequeued first.
-Graph: A collection of nodes (vertices) and edges that connect these nodes.
-Disjoint Set: A data structure that keeps track of a set of disjoint (non-overlapping) sets.
+Binary Search Tree: 
+  A binary tree where the left child of a node contains a value smaller than the node, and the right child contains a value greater than the node.
+  Example: Implementing a dictionary or phonebook, where the keys (e.g., names) are sorted and enable efficient searching and retrieval.
+
+Heap: 
+  A complete binary tree where every parent node has a value greater than or equal to (or less than or equal to) its child nodes.
+    Example:Implementing a priority queue, where the heap structure allows efficient retrieval of the highest-priority element.
+
+Graph:
+   A collection of nodes (vertices) and edges that connect these nodes.
+   Example:Modeling social networks, where nodes represent individuals and edges represent connections or relationships.
+
+Set:
+  An unordered collection of unique elements with no duplicate values.
+  Example: Keeping track of unique elements in a list of email addresses.
+  
+Dictionary/Map: 
+  A data structure that stores key-value pairs, allowing efficient lookup and retrieval of values based on keys.
+    Example:Storing a mapping between employee IDs and their corresponding information in an employee database.
+
+Doubly Linked List: 
+  A linked list where each node contains references to both the next and previous nodes.
+  Example:Implementing a browser's forward/backward navigation functionality, where each node represents a web page and has references to the previous and next pages.
+
+Trie: 
+  A tree-like data structure used to store a dynamic set of strings efficiently.
+   Example:Implementing an auto-complete feature in text editors or search engines.
+
+Priority Queue: 
+  A queue where elements have associated priorities, and elements with higher priority are dequeued first.
+   Example:Managing processes in an operating system, where higher-priority tasks are executed before lower-priority ones.
+
+Disjoint Set: 
+  A data structure that keeps track of a set of disjoint (non-overlapping) sets.
+   Example: Still don't understand.
